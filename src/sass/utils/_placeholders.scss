@@ -1,0 +1,65 @@
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+%contacts-section__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+
+  @media screen and (max-width: $tablet - 1px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  min-width: 161px;
+  min-height: 44px;
+  border-radius: 22px;
+  @media screen and (min-width: $tablet) {
+    min-width: 191px;
+  }
+  @media screen and (min-width: $tablet) {
+    min-width: 198px;
+  }
+ 
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+%transition {
+    transition-property: all;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+}
+
+%main-form__styles {
+    cursor: pointer;
+    outline: none;
+
+    transition-property: all;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+}
+
+%main-form__border {
+    border: 1px solid $third-product-card-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+}

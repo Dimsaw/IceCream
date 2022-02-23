@@ -1,0 +1,524 @@
+.contacts-section {
+    background-image: 
+        linear-gradient(
+            to bottom, 
+            $light-text-color 5%, 
+            $section-dark-background 5%);
+    padding-bottom: 113px;
+    @media screen and (min-width: $tablet) {
+        background-image: 
+            linear-gradient(
+                to bottom, 
+                $light-text-color 10%, 
+                $section-dark-background 10%);
+        padding-bottom: 158px;        
+    }
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 165px;
+        background-image:
+            url(./../images/Contacts-section/desktop-contacts.png), 
+
+            linear-gradient(
+                to bottom, 
+                $light-text-color 10%, 
+                $section-dark-background 10%);
+        background-repeat: no-repeat;
+        background-position-y: 20%;
+        background-size: contain;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(./../images/Contacts-section/desktop-contacts@2x.png), 
+                linear-gradient(
+                    to bottom, 
+                    $light-text-color 10%, 
+                    $section-dark-background 10%);
+            background-repeat: no-repeat;
+            background-position-y: 20%;
+            background-size: contain;  
+        }
+    }
+}
+
+.contacts-section__container {
+    @media screen and (max-width: $tablet - 1px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+}
+
+.contacts-section__title {
+    @extend %visually-hidden;
+}
+
+.contacts-section__list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+
+        margin-bottom: 81px;
+        margin-left: -20px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 86px;
+        margin-left: -30px;
+    }
+}
+
+.contacts-section__item:not(:last-child) {
+    @media screen and (max-width: $tablet - 1px) {
+        margin-bottom: 20px;
+    }
+}
+
+.contacts-section__item:last-child {
+    @media screen and (max-width: $tablet - 1px) {
+        margin-bottom: 54px;
+    }
+}
+
+.contacts-section__item {
+    padding: 43px 20px;
+
+    background-color: $light-text-color;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px $contacts-section-shadow-color;
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 40px) / 3);
+        margin-left: 20px;
+        padding: 50px 32px;
+    }
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc((100% - 60px) / 3);
+        margin-left: 30px;
+        padding: 56px 44px;
+    }
+}
+
+.contacts-section__category {
+    display: inline;
+    padding: 0 24px;
+
+    line-height: 1.83;
+
+    color: $light-text-color;
+
+    background-color: $second-product-card-color;
+    border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+        line-height: 1.86;
+    }
+    @media screen and (min-width: $desktop) {
+        line-height: 1.88;
+    }
+}
+
+.contacts-section__category-secondary {
+    background-color: $third-product-card-color; 
+}
+
+.contacts-section__box:not(:last-child) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $feedback-quotes-color;
+    @media screen and (min-width: $tablet) {
+        padding-top: 30px;
+        padding-bottom: 30px;  
+    }
+    @media screen and (min-width: $desktop) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+.contacts-section__box:last-child {
+    padding-top: 25px;
+    @media screen and (min-width: $tablet) {
+       padding-top: 30px; 
+    }
+    @media screen and (min-width: $desktop) {
+       padding-top: 32px; 
+    }
+}
+
+.contacts-section__subtitle {
+    margin-bottom: 10px;
+
+    line-height: 1.83;
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.88;
+    }
+}
+
+.contacts-section__representation-text {
+    color: $middle-text-color;
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.64;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.81;
+    }
+}
+
+.contacts-section__workdays {
+    line-height: 1.83;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.88;
+    }
+}
+
+.contacts-section__work-time {
+    line-height: 1.83;
+
+    color: $title-label-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.88;
+    }
+}
+
+.contacts-section__work-time:not(:last-child) {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contacts-section__link {
+    display: block;
+
+    color: $middle-text-color;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 1.81;
+    }
+}
+
+.contacts-section__buttons-box {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.contacts-section__button-location {
+    @extend %contacts-section__buttons;
+    @media screen and (max-width: $tablet - 1px) {
+        margin-bottom: 10px;
+    }
+
+    background-color: $location-button-background;
+    color: $light-text-color;
+    @media screen and (min-width: $tablet) {
+        margin-right: 15px;
+    }
+}
+
+.contacts-section__button-franchise {
+    @extend %contacts-section__buttons;
+    background-color: $light-text-color;
+    color: $main-title-color;
+
+    &:hover, &:focus {
+        background-color: $button-hover-background;
+    }
+}
+
+.contacts-section__icon {
+    margin-left: 14px;
+}
+
+// Contacts modal
+.contacts-section-data-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: $bd-color;
+    padding: 93px 15px;
+
+    opacity: 1;
+    
+    @extend %transition;
+   
+    overflow-y: scroll;
+}
+
+.contacts-section-data-modal--hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.contacts-section-data-modal__window {
+    box-shadow: $contacts-section-form-shadow;
+    border-radius: 4px;
+
+    @extend %transition;
+
+    position: relative;
+
+    padding: 40px;
+    width: 450px;
+    height: 609px;
+
+    background-color: $social-network-background-color;
+    
+    @media screen and (max-width: $mobile - 1px) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media screen and (min-width: $tablet){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 528px;
+        height: 581px;
+    }
+}
+
+.contacts-section-data-modal--hidden .contacts-section-data-modal__window {
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+.contacts-section-data-modal__closing {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $slide-homepage-color;
+    background-color: $social-network-background-color;
+    color: $main-title-color;
+    cursor: pointer;
+
+    @extend %transition;
+
+    &:hover, &:focus {
+        color: $third-product-card-color;
+    }
+}   
+
+.contacts-section-data-modal__icon {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.contacts-section-data-modal__title {
+    display: inline-block;
+    margin-bottom: 12px;
+    
+    font-family: Titan One;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $main-title-color;
+}
+
+.main-form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-form__field {
+    position: relative;
+    display: flex;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: $slide-dot-dark-color;
+    
+
+    &:nth-child(-n + 3) {
+        margin-bottom: 10px;
+    }
+
+    &:nth-child(4) {
+        margin-bottom: 20px;
+    }
+
+    &:nth-child(-n + 4) {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    &:nth-child(5) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+.main-form__label {
+   @extend %main-form__styles;
+
+   .main-form__field:nth-child(-n + 4) & {
+        margin-bottom: 4px;
+    }
+}
+.main-form__input {
+    @extend %main-form__styles;
+
+    .main-form__field:nth-child(-n + 3) & {
+        padding: 11px 12px;
+        padding-left: 42px;
+
+        @extend %main-form__border;
+    }
+
+}
+
+.main-form__textarea {
+    @extend %main-form__styles, %main-form__border;
+    
+    padding: 12px 16px;
+
+    resize: none;
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+
+        color: $middle-text-color;
+    }
+}
+
+.main-form-icon {
+    @extend %main-form__styles, %transition;
+
+    position: absolute;
+    top: 50%;
+    left: 12px;
+
+    width: 18px;
+    height: 18px;
+
+    
+}
+
+.main-form__field:hover .main-form__input,
+.main-form__field:focus .main-form__input,
+.main-form__field:hover .main-form-icon,
+.main-form__field:focus .main-form-icon,
+.main-form__field:hover .main-form__textarea,
+.main-form__field:focus .main-form__textarea {
+    border-color: $slide-dot-dark-color;
+    fill: $slide-dot-dark-color;
+}
+
+    /* Checkbox styles */
+
+.main-form__checkbox {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;    
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-form__text {
+    @extend %main-form__styles;
+    display: flex;
+    align-items: center;
+    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+.main-form__tick {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+
+    border: 2px solid $mobile-menu-background;
+    border-radius: 2px;
+
+    @extend %transition;
+}
+
+.main-form__checkbox:checked + .main-form__tick {
+    background-color: $location-button-background;
+    background-image: url("./../images/Contacts-section/check.svg");
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $location-button-background;
+}
+
+.main-form__link{
+    color: $light-text-color;
+    margin-left: 3px;
+}
+
+.contacts-section__form-button {
+    @extend %contacts-section__buttons;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    background-color: $hero-background-color;
+    color: $main-title-color;
+    box-shadow: $contacts-section-form-shadow;
+
+    &:focus, &:hover {
+        background-color: $location-button-background;
+        color: $light-text-color;
+    }
+}
