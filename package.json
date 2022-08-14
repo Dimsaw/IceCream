@@ -1,12 +1,12 @@
 {
-  "name": "parcel-project-template",
+  "name": "IceCream",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://anna-manorik.github.io/parcel-project-temp",
+  "homepage": "https://github.com/Dimsaw/IceCream",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-temp/"
+    "build": "parcel build src/*.html --public-url /IceCream/"
   },
   "repository": {
     "type": "git",
